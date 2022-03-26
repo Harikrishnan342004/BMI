@@ -3,7 +3,8 @@ function calclulate()
     let h = document.getElementById("height").value;
     let w = document.getElementById("weight").value;
     let r = parseInt(w)/(parseFloat(h)*parseFloat(h));
-    document.getElementById("display").innerHTML = r;
+    let a = r.toFixed(2);
+    document.getElementById("display").innerHTML = a;
 }
 
  function cal()
@@ -13,5 +14,8 @@ function calclulate()
      let ten = 100 ;
      let meter = h2/ ten ;
      let rs =parseInt(wtwo)/(parseFloat(meter)*parseFloat(meter));
-     document.getElementById("display").innerHTML =rs;
+     let q = rs.toFixed(2);
+    
+     document.getElementById("display").innerHTML = q;
+     
 }
